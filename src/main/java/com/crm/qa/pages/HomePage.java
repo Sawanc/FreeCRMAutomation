@@ -10,6 +10,11 @@ import com.crm.qa.base.TestBase;
 public class HomePage extends TestBase
 
 {
+	
+	//AFter First Push then Commit
+	
+	
+	
    @FindBy(xpath="//td[@class='headertext' and contains(text(),'Sawan')]")
     WebElement usrname;
       
@@ -33,7 +38,8 @@ public class HomePage extends TestBase
   {
 	  String Title=driver.getTitle();
 	  System.out.println(Title);
-      return Title;
+     System.out.println("Printed after Commit");
+	  return Title;
   }  
   public boolean verifyUserName()
   {
