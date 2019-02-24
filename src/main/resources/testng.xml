@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="FreeCRMTestAutomation">
+<suite name="FreeCRMTestAutomation" >
 	<test name="Free CRM test App">
-		<classes>
-			<class name="com.crm.qa.testcases.ContactPageTest"/>
+		
+		    <parameter name="browser" value="chrome">
+		  		<classes>		
+			<!-- <class name="com.crm.qa.testcases.ContactPageTest"/>
+			
+			<class name="com.crm.qa.testcases.HomePagePageTest"/>
+			 -->
+			<class name="com.crm.qa.testcases.LoginPageTest"/>
+			
 		   </classes>
+		   </parameter>
 	</test>
 </suite>

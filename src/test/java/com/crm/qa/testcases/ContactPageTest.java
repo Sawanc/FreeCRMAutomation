@@ -13,22 +13,17 @@ import com.crm.qa.pages.LoginPage;
 import com.crm.qa.utilities.TestUtil;
 
 public class ContactPageTest extends TestBase
-
-
 {
 	LoginPage loginpage;
 	HomePage homepage;
 	TestUtil tstutil;
-    ContactPage contactpage;
-    
+    ContactPage contactpage;   
     String sheetName="Contacts";
     
 	public ContactPageTest()
 	{
 		super();
-	}	
-	
-	
+	}		
 	@BeforeMethod
 	public void setup() 
 	{
@@ -57,27 +52,21 @@ public class ContactPageTest extends TestBase
 	{
 		contactpage.selectContactName("Keshav Parashar");
 		contactpage.selectContactName("test12 test");		
-	//	test12 test
-	}
-	/*@DataProvider	
+		}
+	@DataProvider	
 	public Object[][] getCRMTestdata()
 	{
 		Object [][] data=TestUtil.getTestData(sheetName);
 		return data;
-	}*/
-	@Test(priority=4)
-	public void createNewContact() throws InterruptedException
-	{
-		/*dataProvider="getCRMTestdata"
-		System.out.println(FirstName);
-		System.out.println(LastName);String Title,String FirstName,String LastName,String Company
-		System.out.println(Company);
-		*/
-	    System.out.println("before Clicking");	
-		homepage.ClickOnNewContacts();
-	    System.out.println("After Clicking");
-		contactpage.createNewContact("Fsjf", "absne","CApp");
 	}
+    @Test(priority=4,dataProvider="getCRMTestData")
+	 public void validateCreateNewContact(String title,String fname,String lname,String company)
+    	{
+			    System.out.println("Before");
+				homepage.ClickOnNewContacts();
+				System.out.println("After");
+				contactpage.createNewContact(title, fname, lname, company);			
+		}			
 	
 	@AfterMethod		
 	public void tearDown()	

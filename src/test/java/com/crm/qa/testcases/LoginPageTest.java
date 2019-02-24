@@ -22,13 +22,13 @@ public class LoginPageTest extends TestBase
 		initialization();
 		lgpage=new LoginPage();
 	}	
-	@Test(priority=0)
+	/*@Test(priority=0)
 	public void logintitleValidate()
 	{
 		String Title=lgpage.getTitle();
 		System.out.println(Title);
 		Assert.assertEquals(Title,"#1 Free CRM software in the cloud for sales and service");			
-	}
+	}*/
 	@Test(priority=1)
 	public void validateCRMLogo()
 	{

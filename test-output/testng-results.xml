@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="3" total="4" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="FreeCRMTestAutomation" duration-ms="22700" started-at="2019-01-24T20:27:36Z" finished-at="2019-01-24T20:27:58Z">
+  <suite name="Default suite" duration-ms="18002" started-at="2019-02-21T18:59:16Z" finished-at="2019-02-21T18:59:34Z">
     <groups>
     </groups>
-    <test name="Free CRM test App" duration-ms="22700" started-at="2019-01-24T20:27:36Z" finished-at="2019-01-24T20:27:58Z">
-      <class name="com.crm.qa.testcases.ContactPageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.ContactPageTest@4cc0edeb]" name="setup" is-config="true" duration-ms="17986" started-at="2019-01-25T01:57:36Z" finished-at="2019-01-25T01:57:54Z">
+    <test name="Default test" duration-ms="18002" started-at="2019-02-21T18:59:16Z" finished-at="2019-02-21T18:59:34Z">
+      <class name="com.crm.qa.testcases.HomePageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.HomePageTest@4cc0edeb]" name="setup" is-config="true" duration-ms="17062" started-at="2019-02-22T00:29:16Z" finished-at="2019-02-22T00:29:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="createNewContact()[pri:4, instance:com.crm.qa.testcases.ContactPageTest@4cc0edeb]" name="createNewContact" duration-ms="4029" started-at="2019-01-25T01:57:54Z" finished-at="2019-01-25T01:57:58Z">
+        <test-method status="PASS" signature="ValidateUserName()[pri:2, instance:com.crm.qa.testcases.HomePageTest@4cc0edeb]" name="ValidateUserName" duration-ms="215" started-at="2019-02-22T00:29:33Z" finished-at="2019-02-22T00:29:33Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createNewContact -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.ContactPageTest@4cc0edeb]" name="tearDown" is-config="true" duration-ms="669" started-at="2019-01-25T01:57:58Z" finished-at="2019-01-25T01:57:58Z">
+        </test-method> <!-- ValidateUserName -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.HomePageTest@4cc0edeb]" name="tearDown" is-config="true" duration-ms="696" started-at="2019-02-22T00:29:33Z" finished-at="2019-02-22T00:29:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.crm.qa.testcases.ContactPageTest -->
-    </test> <!-- Free CRM test App -->
-  </suite> <!-- FreeCRMTestAutomation -->
+      </class> <!-- com.crm.qa.testcases.HomePageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

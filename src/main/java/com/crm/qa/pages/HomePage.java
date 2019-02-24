@@ -9,13 +9,10 @@ import com.crm.qa.base.TestBase;
 
 public class HomePage extends TestBase
 
-{
-	
+{	
 	//AFter First Push then Commit
-	
-	
-	
-   @FindBy(xpath="//td[@class='headertext' and contains(text(),'Sawan')]")
+		
+   @FindBy(xpath="//td[contains(text(),'User: Sawan Choubisa')]")
     WebElement usrname;
       
    @FindBy(xpath="//a[contains(text(),'Contacts')]")
@@ -30,11 +27,14 @@ public class HomePage extends TestBase
    @FindBy(xpath="//a[contains(text(),'Tasks')]")
    WebElement TasktButton;
     
-  public HomePage()
-  {
-	  PageFactory.initElements(driver,this);
-  } 
-  public String verifyHomepagetitle()
+   public HomePage()
+  { 
+	//   System.out.println("Before printed");
+          PageFactory.initElements(driver, this);  
+	 // System.out.println("After Printed");
+	  }
+  
+   public String verifyHomepagetitle()
   {
 	  String Title=driver.getTitle();
 	  System.out.println(Title);
@@ -43,6 +43,7 @@ public class HomePage extends TestBase
   }  
   public boolean verifyUserName()
   {
+	  
 	return usrname.isDisplayed();     
   }  
   public ContactPage ClickOnContacts()
@@ -53,8 +54,6 @@ public class HomePage extends TestBase
   }
   public void ClickOnNewContacts()
   { 
-	  
-	  
 	    Actions action = new Actions(driver);
 		action.moveToElement(contactButton).build().perform();
 		newcontactButton.click();		
@@ -69,5 +68,4 @@ public class HomePage extends TestBase
 	  contactButton.click();
 	  return new ContactPage();	  
   }
-    
 }
