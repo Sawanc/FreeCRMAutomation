@@ -1,33 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="FreeCRMTestAutomation" duration-ms="34660" started-at="2019-02-24T08:32:22Z" finished-at="2019-02-24T08:32:57Z">
+  <suite name="FreeCRMTestAutomationSanity" duration-ms="28223" started-at="2019-02-24T10:25:27Z" finished-at="2019-02-24T10:25:55Z">
     <groups>
     </groups>
-    <test name="Free CRM test App" duration-ms="34660" started-at="2019-02-24T08:32:22Z" finished-at="2019-02-24T08:32:57Z">
-      <class name="com.crm.qa.testcases.LoginPageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@17550481]" name="setup" is-config="true" duration-ms="15700" started-at="2019-02-24T14:02:22Z" finished-at="2019-02-24T14:02:38Z">
+    <test name="Free CRM test AppSanity" duration-ms="28223" started-at="2019-02-24T10:25:27Z" finished-at="2019-02-24T10:25:55Z">
+      <class name="com.crm.qa.testcases.HomePageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.HomePageTest@1936f0f5]" name="setup" is-config="true" duration-ms="27309" started-at="2019-02-24T15:55:27Z" finished-at="2019-02-24T15:55:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="validateCRMLogo()[pri:1, instance:com.crm.qa.testcases.LoginPageTest@17550481]" name="validateCRMLogo" duration-ms="42" started-at="2019-02-24T14:02:38Z" finished-at="2019-02-24T14:02:38Z">
+        <test-method status="PASS" signature="ValidateUserName()[pri:2, instance:com.crm.qa.testcases.HomePageTest@1936f0f5]" name="ValidateUserName" duration-ms="211" started-at="2019-02-24T15:55:54Z" finished-at="2019-02-24T15:55:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateCRMLogo -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@17550481]" name="tearDown" is-config="true" duration-ms="619" started-at="2019-02-24T14:02:38Z" finished-at="2019-02-24T14:02:39Z">
+        </test-method> <!-- ValidateUserName -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.HomePageTest@1936f0f5]" name="tearDown" is-config="true" duration-ms="703" started-at="2019-02-24T15:55:54Z" finished-at="2019-02-24T15:55:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@17550481]" name="setup" is-config="true" duration-ms="9275" started-at="2019-02-24T14:02:39Z" finished-at="2019-02-24T14:02:48Z">
+      </class> <!-- com.crm.qa.testcases.HomePageTest -->
+    </test> <!-- Free CRM test AppSanity -->
+  </suite> <!-- FreeCRMTestAutomationSanity -->
+  <suite name="FreeCRMTestAutomation" duration-ms="43184" started-at="2019-02-24T10:24:44Z" finished-at="2019-02-24T10:25:27Z">
+    <groups>
+    </groups>
+    <test name="Free CRM test App" duration-ms="43184" started-at="2019-02-24T10:24:44Z" finished-at="2019-02-24T10:25:27Z">
+      <class name="com.crm.qa.testcases.LoginPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@180bc464]" name="setup" is-config="true" duration-ms="13793" started-at="2019-02-24T15:54:44Z" finished-at="2019-02-24T15:54:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="logintest()[pri:2, instance:com.crm.qa.testcases.LoginPageTest@17550481]" name="logintest" duration-ms="8383" started-at="2019-02-24T14:02:48Z" finished-at="2019-02-24T14:02:56Z">
+        <test-method status="PASS" signature="validateCRMLogo()[pri:1, instance:com.crm.qa.testcases.LoginPageTest@180bc464]" name="validateCRMLogo" duration-ms="76" started-at="2019-02-24T15:54:58Z" finished-at="2019-02-24T15:54:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCRMLogo -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@180bc464]" name="tearDown" is-config="true" duration-ms="675" started-at="2019-02-24T15:54:58Z" finished-at="2019-02-24T15:54:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@180bc464]" name="setup" is-config="true" duration-ms="12428" started-at="2019-02-24T15:54:58Z" finished-at="2019-02-24T15:55:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="logintest()[pri:2, instance:com.crm.qa.testcases.LoginPageTest@180bc464]" name="logintest" duration-ms="15525" started-at="2019-02-24T15:55:11Z" finished-at="2019-02-24T15:55:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logintest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@17550481]" name="tearDown" is-config="true" duration-ms="619" started-at="2019-02-24T14:02:56Z" finished-at="2019-02-24T14:02:57Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@180bc464]" name="tearDown" is-config="true" duration-ms="662" started-at="2019-02-24T15:55:26Z" finished-at="2019-02-24T15:55:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

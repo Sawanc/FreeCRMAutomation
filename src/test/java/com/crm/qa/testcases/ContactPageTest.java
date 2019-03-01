@@ -66,8 +66,7 @@ public class ContactPageTest extends TestBase
 				homepage.ClickOnNewContacts();
 				System.out.println("After");
 				contactpage.createNewContact(title, fname, lname, company);			
-		}			
-	
+		}				
 	@AfterMethod		
 	public void tearDown()	
 	{

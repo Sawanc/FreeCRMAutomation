@@ -1,11 +1,16 @@
+
  <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
+  
+  
   
   <groupId>FreeCRMTest</groupId>
   <artifactId>TestAutomation</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
+  
+
 
   <name>TestAutomation</name>
   <url>http://maven.apache.org</url>
@@ -31,8 +36,8 @@
            <version>3.0.0-M3</version>
            <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>src/main/resources/testng.xml</suiteXmlFile>
-          </suiteXmlFiles>
+            <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+            </suiteXmlFiles>
         </configuration>
       </plugin>       
      </plugins>
@@ -87,6 +92,14 @@
     <groupId>org.apache.poi</groupId>
     <artifactId>poi-contrib</artifactId>
     <version>3.5-FINAL</version>
-</dependency>    
+</dependency>
+<!-- https://mvnrepository.com/artifact/com.relevantcodes/extentreports -->
+<dependency>
+    <groupId>com.relevantcodes</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>2.41.1</version>
+</dependency>
+
+    
   </dependencies>
 </project>

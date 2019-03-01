@@ -30,15 +30,17 @@ public class LoginPageTest extends TestBase
 		Assert.assertEquals(Title,"#1 Free CRM software in the cloud for sales and service");			
 	}*/
 	@Test(priority=1)
-	public void validateCRMLogo()
+	public void validateCRMLogo() throws InterruptedException
 	{
 		System.out.println("CRMLogo");
-	  Assert.assertEquals(lgpage.validateCRMlogo(),true);	
+	    Assert.assertEquals(lgpage.validateCRMlogo(),true);	
+	    Thread.sleep(5000);
 	}
-	@Test(priority=2)
-	public void logintest() 
+	@Test(priority=2)	
+	public void logintest() throws InterruptedException 
 	{	
 		homepage=lgpage.Login(prop.getProperty("username"), prop.getProperty("password"));		//Returning HomePage class object
+	    Thread.sleep(5000);
 	}	
 	@AfterMethod
 	public void tearDown()

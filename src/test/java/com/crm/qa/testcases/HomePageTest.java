@@ -44,7 +44,6 @@ public class HomePageTest extends TestBase
 	{
 		tstutil.switchToFrame();
 		Assert.assertTrue(homepage.verifyUserName(),"UserName is not displayed");
-	
 	}		 
 	@AfterMethod
 	public void tearDown()	
